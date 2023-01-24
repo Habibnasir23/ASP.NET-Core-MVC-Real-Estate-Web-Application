@@ -1,0 +1,56 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+/* Center the text and make the heading and paragraph bigger */
+.text-center {
+    text-align: center;
+}
+
+.display-4 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #dddddd;
+}
+/* Add hover effect to the rows */
+tr:hover {
+    background-color: #f5f5f5;
+}
+/* Add some padding to the h2 heading */
+h2 {
+    padding-bottom: 20px;
+}

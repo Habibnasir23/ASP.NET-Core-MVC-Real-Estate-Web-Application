@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>This is where we sell properties. And this where you buy 'em</p>
+</div>
+
+<div class="twobeds">
+    <h2>Two Bedroom Properties</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Rent</th>
+                <th>Rooms</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var property in Model.Item1)
+            {
+                <tr>
+                    <td>@property.propAvailable</td>
+                    <td>@property.rent</td>
+                    <td>@property.roomsAvailable</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="onebeds">
+    <h2>One Bedroom Properties</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Rent</th>
+                <th>Rooms</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var property in Model.Item2)
+            {
+                <tr>
+                    <td>@property.propAvailable</td>
+                    <td>@property.rent</td>
+                    <td>@property.roomsAvailable</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="threebeds">
+    <h2>Three Bedroom Properties</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Rent</th>
+                <th>Rooms</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var property in Model.Item3)
+            {
+                <tr>
+                    <td>@property.propAvailable</td>
+                    <td>@property.rent</td>
+                    <td>@property.roomsAvailable</td>
+                    </tr>
+            }
+            </tbody>
+    </table>
+</div>
+
